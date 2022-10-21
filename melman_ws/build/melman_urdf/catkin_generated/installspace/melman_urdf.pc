@@ -1,0 +1,8 @@
+prefix=/home/domiziol/melman_ws/install
+
+Name: melman_urdf
+Description: Description of melman_urdf
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,688 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 0.7 -->
+  <robot name="Melman">
+
+	<link name="Trunk">
+      <inertial>
+        <origin xyz="-7.709e-3	-0.06e-3	-57.629e-3" rpy="0 0 0"/>
+        <mass value="0.691"/>
+        <inertia ixx="1992.6e-6" iyy="1287.385e-6" izz="1142.314e-6" ixy="0.546e-6" ixz="-217.49e-6"  iyz="1.946e-6" />
+      </inertial>
+      <visual name="Trunk_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Trunk.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Trunk_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>  
+
+<!-- Linki lewej nogi-->
+	<link name="Left_HipMount">
+      <inertial>
+        <origin xyz="-14.306e-3	0	24.769e-3" rpy="0 0 0"/>
+        <mass value="0.038"/>
+        <inertia ixx="11.743e-6" iyy="61.298e-6" izz="58.734e-6" ixy="0" ixz="4.429e-6"  iyz="0" />
+      </inertial>
+      <visual name="Left_HipMount_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Left-HipMount.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Left_HipMount_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    
+	
+	<link name="Left_Hip">
+      <inertial>
+        <origin xyz="-21.137e-3	0.17e-3	14.739e-3" rpy="0 0 0"/>
+        <mass value="0.351"/>
+        <inertia ixx="135.823e-6" iyy="317.524e-6" izz="266.663e-6" ixy="-1.265e-6" ixz="4.25e-6"  iyz="2.029e-6" />
+      </inertial>
+      <visual name="Left_Hip_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Left-Hip.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Left_Hip_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    	
+	
+	<link name="Left_Thigh">
+      <inertial>
+        <origin xyz="2.335e-3	0.65e-3	-99.757e-3" rpy="0 0 0"/>
+        <mass value="0.22"/>
+        <inertia ixx="275.661e-6" iyy="250.206e-6" izz="77.57e-6" ixy="0.334e-6" ixz="-7.878e-6"  iyz="-5.455e-6" />
+      </inertial>
+      <visual name="Left_Thigh_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Left-Thigh.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Left_Thigh_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    	
+
+	<link name="Left_Shank">
+      <inertial>
+        <origin xyz="4.836e-3	-2.813e-3	-60.226e-3" rpy="0 0 0"/>
+        <mass value="0.059"/>
+        <inertia ixx="128.748e-6" iyy="106.103e-6" izz="37.097e-6" ixy="-0.804e-6" ixz="-3.208e-6"  iyz="-0.627e-6" />
+      </inertial>
+      <visual name="Left_Shank_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Left-Shank.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Left_Shank_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>   	
+	
+	<link name="Left_Ankle">
+      <inertial>
+        <origin xyz="-21.137e-3	0.17e-3	14.739e-3" rpy="0 0 0"/>
+        <mass value="0.351"/>
+        <inertia ixx="135.823e-6" iyy="317.524e-6" izz="266.663e-6" ixy="-1.265e-6" ixz="4.25e-6"  iyz="2.029e-6" />
+      </inertial>
+      <visual name="Left_Ankle_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Left-Ankle.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Left_Ankle_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>
+	
+    <link name="Left_Foot">
+      <inertial>
+        <origin xyz="-4.442e-3	0	-30.98e-3" rpy="0 0 0"/>
+        <mass value="0.088"/>
+        <inertia ixx="42.902e-6" iyy="138.102e-6" izz="160.902e-6" ixy="0" ixz="-0.647e-6"  iyz="0" />
+      </inertial>
+      <visual name="Left_Foot_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Left-Foot.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Left_Foot_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+			<mesh filename="STLe/Left-Foot-collision.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>	
+	
+<!-- Linki prawej nogi-->
+	<link name="Right_HipMount">
+      <inertial>
+        <origin xyz="-14.306e-3	0e-3	24.769e-3" rpy="0 0 0"/>
+        <mass value="0.038"/>
+        <inertia ixx="11.743e-6" iyy="61.298e-6" izz="58.734e-6" ixy="0" ixz="4.429e-6"  iyz="0" />
+      </inertial>
+      <visual name="Right_HipMount_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Right-HipMount.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="STLe/Right_HipMount_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    
+	
+	<link name="Right_Hip">
+      <inertial>
+        <origin xyz="-21.137e-3	0.17e-3	14.739e-3" rpy="0 0 0"/>
+        <mass value="0.351"/>
+        <inertia ixx="135.823e-6" iyy="317.524e-6" izz="266.663e-6" ixy="-1.265e-6" ixz="4.25e-6"  iyz="2.029e-6" />
+      </inertial>
+      <visual name="Right_Hip_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Right-Hip.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Right_Hip_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    	
+	
+	<link name="Right_Thigh">
+      <inertial>
+        <origin xyz="2.335e-3	0.65e-3	-99.757e-3" rpy="0 0 0"/>
+        <mass value="0.22"/>
+        <inertia ixx="275.661e-6" iyy="250.206e-6" izz="77.57e-6" ixy="0.334e-6" ixz="-7.878e-6"  iyz="-5.455e-6" />
+      </inertial>
+      <visual name="Right_Thigh_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Right-Thigh.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Right_Thigh_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    	
+
+	<link name="Right_Shank">
+      <inertial>
+        <origin xyz="4.836e-3	-2.813e-3	-60.226e-3" rpy="0 0 0"/>
+        <mass value="0.059"/>
+        <inertia ixx="128.748e-6" iyy="106.103e-6" izz="37.097e-6" ixy="-0.804e-6" ixz="-3.208e-6"  iyz="-0.627e-6" />
+      </inertial>
+      <visual name="Right_Shank_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Right-Shank.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Right_Shank_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>   	
+	
+	<link name="Right_Ankle">
+      <inertial>
+		<origin xyz="-21.137e-3	0.17e-3	14.739e-3" rpy="0 0 0"/>
+        <mass value="0.351"/>
+        <inertia ixx="135.823e-6" iyy="317.524e-6" izz="266.663e-6" ixy="-1.265e-6" ixz="4.25e-6"  iyz="2.029e-6" />
+      </inertial>
+      <visual name="Right_Ankle_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Left-Ankle.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Right_Ankle_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>
+	
+    <link name="Right_Foot">
+      <inertial>
+        <origin xyz="-4.442e-3	0	-30.98e-3" rpy="0 0 0"/>
+        <mass value="0.088"/>
+        <inertia ixx="42.902e-6" iyy="138.102e-6" izz="160.902e-6" ixy="0" ixz="-0.647e-6"  iyz="0" />
+      </inertial>
+      <visual name="Right_Foot_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Right-Foot.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Right_Foot_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+			<mesh filename="STLe/Right-Foot-collision.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>		
+
+<!-- Linki prawej ręki-->
+	<link name="Right_ArmMounting">
+      <inertial>
+        <origin xyz="-3.335e-3	17.703e-3	0" rpy="0 0 0"/>
+        <mass value="0.011"/>
+        <inertia ixx="2.246e-6" iyy="3.894e-6" izz="4.859e-6" ixy="-0.637e-6" ixz="0"  iyz="0" />
+      </inertial>
+      <visual name="Right_ArmMounting_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Right-ArmMounting.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Right_ArmMounting_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    
+	
+	<link name="Right_Arm">
+      <inertial>
+        <origin xyz="0.152e-3	-0.087e-3	-49.855e-3" rpy="0 0 0"/>
+        <mass value="0.165"/>
+        <inertia ixx="269.772e-6" iyy="269.138e-6" izz="29.837e-6" ixy="-0.02e-6" ixz="-1.454e-6"  iyz="-0.269e-6" />
+      </inertial>
+      <visual name="Right_Arm_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Right-Arm.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Right_Arm_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    
+
+	<link name="Right_Forearm">
+      <inertial>
+        <origin xyz="0.039e-3	-0.155e-3	-55.716e-3" rpy="0 0 0"/>
+        <mass value="0.092"/>
+        <inertia ixx="41.889e-6" iyy="34.993e-6" izz="18.46e-6" ixy="-0.009e-6" ixz="-0.049e-6"  iyz="0.218e-6" />
+      </inertial>
+      <visual name="Right_Forearm_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Right_Forearm.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Right_Forearm_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    
+
+
+<!-- Linki lewej ręki-->
+	<link name="Left_ArmMounting">
+      <inertial>
+        <origin xyz="-3.335e-3	-17.703e-3	0" rpy="0 0 0"/>
+        <mass value="0.011"/>
+        <inertia ixx="2.246e-6" iyy="3.894e-6" izz="4.859e-6" ixy="0.637e-6" ixz="0"  iyz="0" />
+      </inertial>
+      <visual name="Left_ArmMounting_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Left-ArmMounting.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Left_ArmMounting_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    
+	
+	<link name="Left_Arm">
+      <inertial>
+        <origin xyz="0.152e-3	-0.087e-3	-49.855e-3" rpy="0 0 0"/>
+        <mass value="0.165"/>
+        <inertia ixx="269.772e-6" iyy="269.138e-6" izz="29.837e-6" ixy="-0.02e-6" ixz="-1.454e-6"  iyz="-0.269e-6" />
+      </inertial>
+      <visual name="Left_Arm_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Left-Arm.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Left_Arm_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    
+
+	<link name="Left_Forearm">
+      <inertial>
+        <origin xyz="0.039e-3	-0.155e-3	-55.716e-3" rpy="0 0 0"/>
+        <mass value="0.092"/>
+        <inertia ixx="41.889e-6" iyy="34.993e-6" izz="18.46e-6" ixy="-0.009e-6" ixz="-0.049e-6"  iyz="0.218e-6" />
+      </inertial>
+      <visual name="Left_Forearm_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Left_ForeArm.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Left_Forearm_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    
+
+<!-- Linki głowy -->
+	<link name="Head_Mounting">
+      <inertial>
+        <origin xyz="0	-3.335e-3	-17.703e-3" rpy="0 0 0"/>
+        <mass value="0.011"/>
+        <inertia ixx="4.859e-6" iyy="2.246e-6" izz="3.894e-6" ixy="0" ixz="0"  iyz="0.637e-6" />
+      </inertial>
+      <visual name="Head_Mounting_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/HeadMounting.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Head_Mounting_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    
+	
+	<link name="Head">
+      <inertial>
+        <origin xyz="0.022e-3	0.28e-3	11.283e-3" rpy="0 0 0"/>
+        <mass value="0.077"/>
+        <inertia ixx="22.035e-6" iyy="18.242e-6" izz="13.649e-6" ixy="-0.008e-6" ixz="-0.02e-6"  iyz="0.689e-6" />
+      </inertial>
+      <visual name="Head_visual">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="STLe/Head.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="robot"/>
+      </visual>
+      <collision name="Head_collision">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+        </geometry>
+      </collision>
+    </link>    
+
+
+
+<!-- Jointy prawej nogi-->
+    <joint name="RTz" type="revolute">
+      <origin xyz="0	-40e-3	-150.065e-3" rpy="0 0 0"/>
+      <parent link="Trunk"/>
+      <child link="Right_HipMount"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+
+    <joint name="RTx" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="Right_HipMount"/>
+      <child link="Right_Hip"/>
+      <axis xyz="1.0 0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>	
+
+    <joint name="RTy" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="Right_Hip"/>
+      <child link="Right_Thigh"/>
+      <axis xyz="0 1.0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+	
+    <joint name="RSy" type="revolute">
+      <origin xyz="0 0 -128e-3" rpy="0 0 0"/>
+      <parent link="Right_Thigh"/>
+      <child link="Right_Shank"/>
+      <axis xyz="0 1.0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+
+    <joint name="RFy" type="revolute">
+      <origin xyz="0 0 -128e-3" rpy="0 0 0"/>
+      <parent link="Right_Shank"/>
+      <child link="Right_Ankle"/>
+      <axis xyz="0 1.0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+	
+    <joint name="RFx" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="Right_Ankle"/>
+      <child link="Right_Foot"/>
+      <axis xyz="1.0 0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+
+	
+<!-- Jointy lewej nogi-->
+    <joint name="LTz" type="revolute">
+      <origin xyz="0	40e-3	-150.065e-3" rpy="0 0 0"/>
+      <parent link="Trunk"/>
+      <child link="Left_HipMount"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+
+    <joint name="LTx" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="Left_HipMount"/>
+      <child link="Left_Hip"/>
+      <axis xyz="1.0 0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>	
+
+    <joint name="LTy" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="Left_Hip"/>
+      <child link="Left_Thigh"/>
+      <axis xyz="0 1.0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+	
+    <joint name="LSy" type="revolute">
+      <origin xyz="0 0 -128e-3" rpy="0 0 0"/>
+      <parent link="Left_Thigh"/>
+      <child link="Left_Shank"/>
+      <axis xyz="0 1.0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+
+    <joint name="LFy" type="revolute">
+      <origin xyz="0 0 -128e-3" rpy="0 0 0"/>
+      <parent link="Left_Shank"/>
+      <child link="Left_Ankle"/>
+      <axis xyz="0 1.0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+	
+    <joint name="LFx" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="Left_Ankle"/>
+      <child link="Left_Foot"/>
+      <axis xyz="1.0 0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+
+<!-- Jointy prawej ręki-->
+    <joint name="RAy" type="revolute">
+      <origin xyz="0	-88.659e-3	0" rpy="0 0 0"/>
+      <parent link="Trunk"/>
+      <child link="Right_ArmMounting"/>
+      <axis xyz="0 1.0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+
+    <joint name="RAx" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="Right_ArmMounting"/>
+      <child link="Right_Arm"/>
+      <axis xyz="1.0 0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>	
+
+    <joint name="RFAy" type="revolute">
+      <origin xyz="0	0	-98.6e-3" rpy="0 0 0"/>
+      <parent link="Right_Arm"/>
+      <child link="Right_Forearm"/>
+      <axis xyz="0 1.0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+
+<!-- Jointy lewej ręki-->
+    <joint name="LAy" type="revolute">
+      <origin xyz="0	88.341e-3	0" rpy="0 0 0"/>
+      <parent link="Trunk"/>
+      <child link="Left_ArmMounting"/>
+      <axis xyz="0 1.0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+
+    <joint name="LAx" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="Left_ArmMounting"/>
+      <child link="Left_Arm"/>
+      <axis xyz="1.0 0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>	
+
+    <joint name="LFAy" type="revolute">
+      <origin xyz="0	0	-98.6e-3" rpy="0 0 0"/>
+      <parent link="Left_Arm"/>
+      <child link="Left_Forearm"/>
+      <axis xyz="0 1.0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>	
+	
+<!-- Jointy głowy -->
+    <joint name="Hz" type="revolute">
+      <origin xyz="18.061e-3	0.134e-3	42.5e-3" rpy="0 0 0"/>
+      <parent link="Trunk"/>
+      <child link="Head_Mounting"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>
+
+    <joint name="Hy" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="Head_Mounting"/>
+      <child link="Head"/>
+      <axis xyz="0 1.0 0"/>
+      <limit lower="-3.141592741" upper="3.141592741" effort="10000000000.0" velocity="628.318530718"/>
+    </joint>	
+
+
+
+<!-- Jointy -->
+    <material name="robot">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>    
+	
+	<material name="mat_calcn_l_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_calcn_r_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_femur_l_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_femur_r_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_hand_l_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_hand_r_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_humerus_l_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_humerus_r_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_pelvis_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_radius_l_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_radius_r_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_talus_l_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_talus_r_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_tibia_l_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_tibia_r_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_toes_l_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_toes_r_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_torso_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_ulna_l_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+    <material name="mat_ulna_r_visual">
+      <color rgba="1.0 1.0 1.0 1.0"/>
+    </material>
+
+  </robot>

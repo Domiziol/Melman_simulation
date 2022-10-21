@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+        <param name="robot_description" command="cat '$(find melman_urdf)/urdf/Melman.urdf'" />
+
+        <node name="spawn_model" pkg="gazebo_ros" type="spawn_model"
+              args="-urdf -param robot_description -model Melman" />
+</launch>
